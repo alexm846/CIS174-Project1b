@@ -1,0 +1,57 @@
+1.  Can we have two public classes in one java file?
+ A.  True
+ B.  False
+
+2.  What is the default value of String variable?
+ A. ""
+ B. ''
+ C. null
+ D. not defined
+
+3.  What invokes a thread's run() method?
+ A. JVM invokes the thread's run() method when the thread is initially executed.
+ B. Main application running the thread.
+ C. start() method of the thread class.
+ D. None of the above.
+
+4.  Which of the following is not a pillar of OOP?
+ A. Abstraction
+ B. Polymorphism
+ C. Flexibility
+ D. Inheritance
+
+5.  A List is a type of:
+ A. Spoon
+ B. Collection
+ C. Stack
+ D. Printer
+
+6.  Parsing is the process of reading a program before:
+ A. Translating
+ B. Computing
+ C. Running
+ D. Closing
+
+7.  A value that you provide when you invoke a method is called a(n):
+ A. integer
+ B. argument
+ C. token
+ D. frame
+
+8.  The product of all the integers up to and including a given integer is called a(n):
+ A. double
+ B. product
+ C. factorial
+ D. stub
+
+9.  A loop that tests the condition before each iteration is called a(n):
+ A. loop variable
+ B. pretest loop
+ C. infinate loop
+ D. count-down loop
+
+10.  A technique for bundling multiple named variables into a single object is called:
+ A. binding
+ B. shadowing
+ C. information hiding
+ D. data encapsulation

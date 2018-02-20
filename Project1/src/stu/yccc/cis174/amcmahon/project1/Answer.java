@@ -61,7 +61,7 @@ public class Answer {
 
 	public boolean isCorrect() {
 		// method returns true if user answer is correct
-		if (this.content == userAnswer) {
+		if (this.content == this.userAnswer) {
 			return true;
 		} else {
 			return false;

@@ -86,7 +86,26 @@ public class JavaExam {
 			System.out.println(e.getMessage());
 		}
 	}
-
+	public void beginExam(List<Question> questionList, List<Answer> answerList) {
+			Scanner scan = new Scanner(System.in);
+			int i = 0;
+	
+			System.out.println("Welcome to the Java Exam!");
+			// print exam questions, scan user answer & change to upper-case char, & store
+			// them in Answer objects
+			for (Question question : questionList) {
+				System.out.println(question);
+				char userAnswer = scan.next().charAt(0);
+				userAnswer = Character.toUpperCase(userAnswer);
+				i++;
+				for (Answer answer : answerList) {
+					if (answer.getQuestionNum() == i) {
+						answer.setUserAnswer(userAnswer);
+					}
+				}
+			}
+		}
+	
 	public void printResults(List<Answer> answerList, String outFile) {
 		// method to print & write to exam results
 		try {
@@ -109,26 +128,6 @@ public class JavaExam {
 			fWriter.close();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
-		}
-	}
-
-	public void beginExam(List<Question> questionList, List<Answer> answerList) {
-		Scanner scan = new Scanner(System.in);
-		int i = 0;
-
-		System.out.println("Welcome to the Java Exam!");
-		// print exam questions, scan user answer & change to upper-case char, & store
-		// them in Answer objects
-		for (Question question : questionList) {
-			System.out.println(question);
-			char userAnswer = scan.next().charAt(0);
-			userAnswer = Character.toUpperCase(userAnswer);
-			i++;
-			for (Answer answer : answerList) {
-				if (answer.getQuestionNum() == i) {
-					answer.setUserAnswer(userAnswer);
-				}
-			}
 		}
 	}
 
